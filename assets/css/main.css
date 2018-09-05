@@ -779,6 +779,10 @@
 	.project-list li {
 		list-style-type: none;
 	}
+
+    .project-list li::before {
+        content: '–';
+    }
 /* Footer */
 
 	#footer {
