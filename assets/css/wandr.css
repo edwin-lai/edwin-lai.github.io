@@ -1,0 +1,431 @@
+
+@font-face {
+  font-family: "Metropolis 1920";
+  src: url("https://dl.dropboxusercontent.com/s/992e3lncawk5j2q/Metropolis1920.otf?dl=0");
+}
+html, body {
+  background: transparent;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 0;
+}
+
+h1 {
+  display: inline-block;
+  padding-bottom: 32px;
+  position: relative;
+}
+h1::before, h1::after {
+  display: inline-block;
+  border-top: 1px solid;
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 30px;
+}
+h1::before {
+  left: -40px;
+}
+h1::after {
+  right: -40px;
+}
+
+.light-bg {
+  background: #ffffff;
+  color: #a5a5a5;
+}
+.light-bg h1, .light-bg h2, .light-bg h3, .light-bg h4, .light-bg h5, .light-bg h6, .light-bg .panel {
+  color: #3a3a3a;
+}
+
+.color-1-bg {
+  background: #6bbaa7;
+}
+
+.color-2-bg {
+  background: #fba100;
+}
+
+.light-bg, .color-1-bg, .color-2-bg {
+  margin: 0;
+  padding: 64px 0;
+}
+
+.no-margin-paragraphs > p {
+  margin: 0;
+}
+
+.btn {
+  border-radius: 24px;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn-default {
+  background: #eeeeee;
+  border: none;
+}
+
+.btn-primary {
+  background: #fba100;
+  border-color: #c88000;
+  transition: background 0.5s, border-color 0.5s;
+}
+.btn-primary:hover {
+  background: #ffbe49;
+  border-color: #c88000;
+  color: #f2f2f2;
+}
+
+.header {
+  background: transparent;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: "Oswald";
+  justify-content: space-between;
+  margin-bottom: 5vh;
+  padding: 8px 16px 0 16px;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 36px;
+  padding: 8px;
+}
+
+a.logo:hover, a.logo:focus, a.logo:active {
+  color: #f4c150;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  height: 48px;
+}
+
+.header-nav-button {
+  border-right: 2px solid #ffffff;
+  color: #f4c150;
+  cursor: pointer;
+  margin: 14px 0;
+  padding: 0 14px;
+  position: relative;
+  text-transform: uppercase;
+  transition: border 0.5s;
+}
+.header-nav-button > .fa {
+  transform: translateY(-1px);
+}
+.header-nav-button:last-child {
+  border-right: none;
+}
+.header-nav-button:hover {
+  color: #f6ca68;
+  text-decoration: none;
+}
+.header-nav-button:hover::after {
+  border-top: 1px solid #f6ca68;
+  bottom: 0;
+  content: "";
+  left: 14px;
+  position: absolute;
+  width: calc(100% - 2 * 14px);
+}
+
+.footer {
+  background: #333333;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer .logo {
+    padding: 0;
+  }
+  .footer .copyright, .footer .credits {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12px;
+  }
+  .footer .copyright a, .footer .credits a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .footer .copyright a:hover, .footer .credits a:hover {
+    color: #ffffff;
+  }
+  .footer .copyright {
+    left: 16px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .footer .copyright {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .footer .credits {
+    right: 16px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .footer .credits {
+    align-items: flex-end;
+  }
+}
+
+.form-control {
+  margin-bottom: 16px;
+}
+
+.form-message {
+  margin-top: 16px;
+}
+
+.wandr {
+  font-family: "Metropolis 1920", sans-serif;
+}
+
+.modal {
+  color: black;
+}
+.modal .btn {
+  font-family: "Raleway", sans-serif;
+}
+
+.bigger-font {
+  font-size: 20px;
+  line-height: 16px;
+}
+
+.form-control:focus {
+  border-color: #6bbaa7;
+}
+
+html, body {
+  color: #ffffff;
+}
+
+.clear-bg {
+  background: rgba(107, 186, 167, 0.8);
+  margin: 0;
+}
+
+.jumbotron {
+  height: 50vh;
+  min-height: 300px;
+}
+.jumbotron p {
+  font-weight: 300;
+}
+
+.bg-video {
+  position: fixed;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .bg-video {
+    display: none;
+  }
+}
+
+.bg-video-fallback {
+  background-image: url("https://dl.dropboxusercontent.com/s/vouudhqpct7flru/wandr_fallback_background.jpg?dl=0");
+  background-size: 100vw auto;
+  background-position: center;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 100vw;
+  z-index: -2;
+}
+@media (max-aspect-ratio: 1435/957) {
+  .bg-video-fallback {
+    background-size: auto 100vh;
+  }
+}
+
+.feature {
+  background: #dddddd;
+  text-align: center;
+}
+
+.signup-button {
+  margin: 8vh 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+}
+
+.signup-button-wrapper {
+  text-align: center;
+  height: 45vh;
+}
+
+.landing-down-arrow {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 96px;
+  transition: font-size 0.1s;
+}
+.landing-down-arrow:hover {
+  font-size: 100px;
+}
+
+.section-heading {
+  margin-bottom: 48px;
+}
+
+.pitch-close {
+  text-align: center;
+}
+.pitch-close .larger-screen-heading::before, .pitch-close .larger-screen-heading::after {
+  display: none;
+}
+@media (min-width: 768px) {
+  .pitch-close .larger-screen-heading::after {
+    border: none;
+    content: "?";
+    display: inline;
+    position: static;
+    width: auto;
+  }
+}
+@media (max-width: 400px) {
+  .pitch-close .larger-screen-heading {
+    display: none;
+  }
+}
+@media (min-width: 401px) {
+  .pitch-close .small-mobile-heading {
+    display: none;
+  }
+}
+.pitch-close p {
+  margin: 0 24px;
+}
+.pitch-close .signup-button {
+  margin-bottom: 0;
+}
+
+.logo-image {
+  width: 25%;
+  margin: 24px 0;
+  min-width: 256px;
+}
+
+.plane-image, .dummy {
+  height: 137px;
+  width: 128px;
+}
+@media (max-width: 768px) {
+  .plane-image, .dummy {
+    display: none;
+  }
+}
+
+.why-wandr-image {
+  height: 329px;
+}
+@media (max-width: 768px) {
+  .why-wandr-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.flex {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-us-explanation {
+  margin: 0 16px;
+}
+
+.why-wandr-explanation {
+  flex-grow: 1;
+  height: 329px;
+  text-align: center;
+}
+
+.triangle-left {
+  position: absolute;
+  left: 473px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #fba100;
+  border-bottom: 10px solid transparent;
+}
+@media (max-width: 768px) {
+  .triangle-left {
+    display: none;
+  }
+}
+
+.how-to {
+  text-align: center;
+}
+.how-to .badge {
+  background: #fba100;
+  margin-right: 4px;
+  transform: translateY(-2px);
+}
+.how-to .fa {
+  color: #6bbaa7;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.animated-text {
+  border-bottom: 4px solid #ffffff;
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+}
+.animated-text > .animated {
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .animated-text {
+    border-bottom: 0;
+    display: block;
+  }
+  .animated-text > .animated::after {
+    content: "?";
+  }
+}

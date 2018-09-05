@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>WANDR Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title"              content="WANDR" />
+    <meta property="og:description"        content="Flight + hotel packages at crazy cheap rates to surprise destinations." />
+    <meta property="og:image"              content="https://dl.dropboxusercontent.com/s/dmv2ojy1a6gb1zf/wandr_fb_thumbnail.jpg?dl=0" />
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Fonts and Icon Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/610e47751f.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js" async></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript; Bootstrap requires jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-99024440-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/wandr.css">
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <a class="logo wandr" href="/">WANDR</a>
+      <nav class="header-nav">
+        <a class="header-nav-button" href="https://facebook.com/allwhowandr"><i class="fa fa-facebook-square"></i></a>
+        <a class="header-nav-button" href="mailto:contact@allwhowandr.com">Contact Us</a>
+        <div class="header-nav-button" type="button" data-toggle="modal" data-target="#signup-modal">Sign Up</div>
+      </nav>
+    </header>
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <form id="signup-form" class="/users" action="index.html" method="post">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+              <input type="email" name="email" placeholder=""="Email" class="form-control">
+              <input type="text" name="airport" placeholder="Home Airport (3 Letter Code)" class="form-control" list="airport-list">
+              <datalist id="airport-list"></datalist>
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob">
+              <br />
+              <div id="signup-form-message" class="panel hidden form-message">
+                <div class="panel-heading">
+
+                </div>
+              </div>
+              Don't worry – we'll only use your email to notify you when we launch.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary" value="Sign Up">
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bg-video-fallback">
+      <video src="https://dl.dropboxusercontent.com/s/3r6pjeldlehre1n/WANDR_Vid.webm?dl=0" class="bg-video" loop muted autoplay></video>
+    </div>
+    <div class="jumbotron clear-bg">
+      <div class="container">
+        <img src="https://dl.dropboxusercontent.com/s/dvgps3jgib10lfv/wandr_logo.png?dl=0" alt="WANDR" class="logo-image"/>
+        <p>
+          Flight + hotel packages at crazy cheap rates to surprise destinations.
+        </p>
+      </div>
+    </div>
+
+    <div class="container signup-button-wrapper">
+      <a class="btn btn-primary btn-lg signup-button" role="button" type="button" data-toggle="modal" data-target="#signup-modal">Sign up for our invite-only beta</a>
+      <div>
+        <i class="fa fa-angle-double-down landing-down-arrow" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div id="about-us" class="light-bg text-center">
+      <h1 data-aos="fade-up">About Us</h1>
+      <div class="about-us-content">
+        <img src="https://dl.dropboxusercontent.com/s/htibjkgujkhgbds/wandr_plane.png?dl=0" class="plane-image" data-aos="fade-up" />
+        <span class="about-us-explanation no-margin-paragraphs">
+          <p data-aos="fade-up">
+            WANDR is a booking platform for discounted, curated getaways to amazing places.
+          </p>
+          <p data-aos="fade-up">
+            How do we get such great deals? We send you to a surprise destination!
+          </p>
+          <br />
+          <p data-aos="fade-up">
+            But don't worry — you're not going in blind.
+          </p>
+          <p data-aos="fade-up">
+            You'll get a comprehensive and personalized guide, tailored to your interests.
+          </p>
+          <br />
+          <p data-aos="fade-up">
+            We did the research for you so your trip can be fun and stress-free.
+          </p>
+        </span>
+        <span class="dummy" style="height:128px;width:128px;"></span>
+      </div>
+    </div>
+
+    <div id="why-wandr" class="flex">
+      <img src="https://dl.dropboxusercontent.com/s/hxv13j1jad73dtf/SF%20Peace.jpg?dl=0" class="why-wandr-image" />
+      <span class="color-2-bg why-wandr-explanation" >
+        <span class="no-margin-paragraphs">
+          <h1 data-aos="fade-up">Why WANDR?</h1>
+          <span class="triangle-left"></span>
+          <p data-aos="fade-up">
+            Maybe you're on a budget...
+          </p>
+          <p data-aos="fade-up">
+            Maybe you just don't have time to plan a trip...
+          </p>
+          <p data-aos="fade-up">
+            Maybe you don't know your schedule...
+          </p>
+          <p data-aos="fade-up">
+            Or maybe...
+          </p>
+          <p data-aos="fade-up">
+            You're the physical embodiment of YOLO!
+          </p>
+          <p data-aos="fade-up">
+            Either way, we've got you covered. (Later FOMO ✌)
+          </p>
+        </span>
+      </span>
+    </div>
+
+<div id="how-to" class="light-bg how-to">
+  <h1 class="section-heading text-center" data-aos="fade-up">How it Works</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default feature" data-aos="fade-up">
+          <div class="panel-body">
+            <i class="fa fa-calendar animated bounceIn"></i>
+            <h4><span class="badge">1</span>When & Where</h4>
+            Select your dates and departure city.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default feature" data-aos="fade-up">
+          <div class="panel-body">
+            <i class="fa fa-users animated bounceIn"></i>
+            <h4><span class="badge">2</span>Add Your Crew</h4>
+            Take your S.O. on a romantic getaway, or grab some friends for an adventure.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default feature" data-aos="fade-up">
+          <div class="panel-body">
+            <i class="fa fa-list animated bounceIn"></i>
+            <h4><span class="badge">3</span>Options</h4>
+            We’ll give you a curated list of 10 possible destinations.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-sm-4">
+        <div class="panel panel-default feature" data-aos="fade-up">
+          <div class="panel-body">
+            <i class="fa fa-times-circle-o animated bounceIn"></i>
+            <h4><span class="badge">4</span>Veto</h4>
+            Veto up to two cities you’re not interested in for free and then book!
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default feature" data-aos="fade-up">
+          <div class="panel-body">
+            <i class="fa fa-gift animated bounceIn"></i>
+            <h4><span class="badge">5</span>Be Surprised</h4>
+            48 hours before your day of departure, your destination and booking info will be revealed (including accommodations at a ★★★★<span class="bigger-font">+</span> hotel).
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default feature" data-aos="fade-up">
+          <div class="panel-body">
+            <i class="fa fa-map-marker animated bounceIn"></i>
+            <h4><span class="badge">6</span>Explore</h4>
+            No time to research? We’ll send you a personalized WANDR guide to help you plug-in to the local culture!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="color-1-bg">
+  <div class="pitch-close" data-aos="fade-up">
+    <h1 class="larger-screen-heading">Ready to <span class="animated-text">
+      <span class="animated fadeInRight">go on a foodie adventure</span>
+      <span class="animated hidden">treat yo self (you deserve it)</span>
+      <span class="animated hidden">soak up some rays</span>
+      <span class="animated hidden">sample the local brews</span>
+      <span class="animated hidden">up that insta game</span>
+      <span class="animated hidden">WANDR</span>
+    </span></h1>
+    <h1 class="small-mobile-heading">Ready to WANDR?</h1>
+    <p>We’re out negotiating our airline and hotel partnerships to deliver you the best prices!</p>
+    <br />
+    <p>Sign up to be notified when we launch and get exclusive access to join our invite-only pilot program with special early adopter benefits.</p>
+    <a class="btn btn-primary btn-lg signup-button" role="button" type="button" data-toggle="modal" data-target="#signup-modal">Sign up</a>
+  </div>
+</div>
+    <footer class="footer no-margin-paragraphs">
+      <div class="logo wandr">WANDR</div>
+      <span class="copyright">
+        <span>© 2017 WANDR – ALL RIGHTS RESERVED</span>
+        <span>LOGO FONT BY JOSIP KELAVA</span>
+      </span>
+      <span class="credits">
+        <span>FACEBOOK THUMBNAIL BY AUBREY LAO</span>
+        <a href="https://creativecommons.org/licenses/by/3.0/" data-toggle="tooltip" data-html="true" title="Background video includes footage by:<br />Geoffroy Dubreuil<br />Brendon Tyree<br />Fabien Ecochard<br />Baptiste Lanne<br />Ludovic Gibert<br />Jem Moore<br />David Faddis<br />Matt Caplin<br />Samuel Glazebrook<br />">VIDEOGRAPHY CREDIT</a>
+      </span>
+    </footer>
+
+    <script src="./assets/js/wandr.js" charset="utf-8"></script>
+  </body>
+</html>
